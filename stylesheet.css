@@ -1,0 +1,94 @@
+*{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: lightcyan;
+  color: darkgreen;
+  display: flex;
+  height:100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container{
+  width: 25vw;
+  min-width: 500px;
+  height: 35vh;
+  background:rgb(255,255,255,.3);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  border-radius: 15px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+
+}
+.ratings-container{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:20px;
+  height:30%;
+  width: 92%;
+}
+
+.rating{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  width:25%;
+  height:100%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+ 
+.rating:hover,
+.rating.active{
+  background-color: rgb(61, 163, 100);
+  color:rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  .emoji{
+    scale: 1.25;
+  }
+}
+
+ 
+.rating img {
+  width:40px;
+  transition: all 0.4s ease;
+}
+
+.btn{
+  width: 25%;
+  height:12%;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  color:rgb(243, 243, 243);
+  background-color:rgb(54, 141, 4) ;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+ 
+}
+.btn:hover{
+  background-color:rgb(46, 121, 3);
+  color:rgb(243, 243, 243) ;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.btn:active{
+  scale:0.95;
+}
+
